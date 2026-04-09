@@ -5,8 +5,8 @@ import { schema } from './sanity'
 export default defineConfig({
   name: 'unimod-motors',
   title: 'Unimod Motors',
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'meqk7z80',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   plugins: [
     structureTool({
       structure: (S) =>
